@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap');
+
+/* --- GENERAL STYLES --- */
+html { 
+    scroll-behavior: smooth; 
+}
+
+body { 
+    font-family: 'Rajdhani', sans-serif; 
+    background-color: #0f0f1b; 
+    color: #ffffff; 
+    overflow-x: hidden; 
+    min-height: 100vh; 
+}
+
+h1,h2,h3,h4,h5,h6 { 
+    font-family: 'Orbitron', sans-serif; 
+}
+
+.cyber-gradient { 
+    background: linear-gradient(135deg, #0f0f1b 0%, #1a1a2e 50%, #0a0a14 100%); 
+}
+
+.neon-border { 
+    border: 1px solid #00eeff; 
+    box-shadow: 0 0 10px #00eeff, 0 0 20px rgba(0, 238, 255, 0.3); 
+}
+
+.neon-text-blue { 
+    text-shadow: 0 0 5px #00eeff, 0 0 10px #00eeff; 
+}
+
+.neon-text-pink { 
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff; 
+}
+
+.glow { 
+    animation: glow 2s infinite alternate; 
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #00eeff, 0 0 10px #00eeff; }
+    to { text-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff, 0 0 30px #00eeff; }
+}
+
+.grid-pattern { 
+    background-image: linear-gradient(rgba(0, 238, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 238, 255, 0.1) 1px, transparent 1px); 
+    background-size: 25px 25px; 
+}
+
+/* --- COMPONENT STYLES --- */
+.cyber-card { 
+    background: rgba(26, 26, 46, 0.7); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(0, 238, 255, 0.3); 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.cyber-card:hover { 
+    transform: translateY(-8px) scale(1.02); 
+    border-color: #00eeff; 
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.6); 
+}
+
+.cyber-button { 
+    background: linear-gradient(45deg, #bd00ff, #ff00ff); 
+    border: 1px solid #ff00ff; 
+    position: relative; 
+    overflow: hidden; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); 
+}
+
+.cyber-button:hover { 
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.8); 
+    transform: scale(1.05); 
+}
+
+.cyber-button::before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: -100%; 
+    width: 100%; 
+    height: 100%; 
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent); 
+    transition: 0.5s; 
+}
+
+.cyber-button:hover::before { 
+    left: 100%; 
+}
+
+.cyber-input {
+    background: rgba(26, 26, 46, 0.7);
+    border: 1px solid #00eeff;
+    color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.cyber-input:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.7);
+    border-color: #00eeff;
+}
+
+/* --- FULLSCREEN EFFECTS --- */
+.scan-line { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 3px; 
+    background: rgba(0, 238, 255, 0.7); 
+    box-shadow: 0 0 15px rgba(0, 238, 255, 1); 
+    animation: scan 5s linear infinite; 
+    z-index: 1000; 
+    pointer-events: none; 
+}
+
+@keyframes scan { 
+    0% { top: 0; } 
+    100% { top: 100%; } 
+}
+
+/* --- NAVIGATION STYLES --- */
+.cyber-nav { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 999; 
+    background: rgba(15, 15, 27, 0.5); 
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s ease; 
+    border-bottom: 1px solid rgba(0, 238, 255, 0.2); 
+}
+
+.cyber-nav.scrolled { 
+    background: rgba(15, 15, 27, 0.9); 
+    border-bottom: 1px solid rgba(0, 238, 255, 0.4); 
+}
+
+.cyber-nav-link { 
+    position: relative; 
+    transition: color 0.3s ease; 
+    text-shadow: 0 0 3px rgba(0, 238, 255, 0.5); 
+}
+
+.cyber-nav-link:hover { 
+    color: #00eeff; 
+    text-shadow: 0 0 8px #00eeff; 
+}
+
+.cyber-nav-link::after { 
+    content: ''; 
+    position: absolute; 
+    width: 0; 
+    height: 1px; 
+    bottom: -5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #00eeff; 
+    transition: width 0.3s ease; 
+    box-shadow: 0 0 5px #00eeff; 
+}
+
+.cyber-nav-link:hover::after { 
+    width: 100%; 
+}
+
+/* --- PROJECT TABS STYLES --- */
+.cyber-tab { 
+    font-family: 'Orbitron', sans-serif; 
+    background: transparent; 
+    border: none; 
+    color: #8892b0; 
+    padding: 10px 20px; 
+    position: relative; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+.cyber-tab:hover { 
+    color: #00eeff; 
+    text-shadow: 0 0 5px rgba(0, 238, 255, 0.7); 
+}
+
+.cyber-tab::after { 
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 0; 
+    height: 2px; 
+    background-color: #00eeff; 
+    box-shadow: 0 0 10px #00eeff; 
+    transition: width 0.3s ease; 
+}
+
+.cyber-tab.active { 
+    color: #ffffff; 
+    text-shadow: 0 0 8px #00eeff; 
+}
+
+.cyber-tab.active::after { 
+    width: 100%; 
+}
+
+.project-panel { 
+    display: none; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.project-panel.active { 
+    display: grid; 
+    opacity: 1; 
+}
+
+/* --- PREVIEW MODAL STYLES --- */
+.preview-button { 
+    background: rgba(0, 238, 255, 0.1); 
+    border: 1px solid rgba(0, 238, 255, 0.5); 
+    color: #00eeff; 
+    padding: 8px 16px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    font-family: 'Orbitron', sans-serif; 
+}
+
+.preview-button:hover { 
+    background: rgba(0, 238, 255, 0.2); 
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.5); 
+}
+
+#preview-modal { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
+}
+
+#preview-modal.active { 
+    opacity: 1; 
+    pointer-events: all; 
+}
+
+#modal-overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(15, 15, 27, 0.8); 
+    backdrop-filter: blur(8px); 
+}
+
+#modal-content-wrapper { 
+    position: relative; 
+    z-index: 1001; 
+    width: 100%; 
+    max-width: 600px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#modal-image { 
+    width: 100%; 
+    max-height: 70vh; 
+    object-fit: contain; 
+    border-radius: 8px; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transform: scale(0.8); 
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
+}
+
+#preview-modal.active #modal-image { 
+    opacity: 1; 
+    transform: scale(1); 
+}
+
+#modal-details-box { 
+    width: 100%; 
+    background: rgba(26, 26, 46, 0.8); 
+    border: 1px solid rgba(0, 238, 255, 0.3); 
+    border-radius: 12px; 
+    padding: 2rem; 
+    margin-top: -3rem; 
+    position: relative; 
+    z-index: 2; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) 0.2s; 
+}
+
+#preview-modal.active #modal-details-box { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+#modal-close-btn { 
+    position: fixed; 
+    top: 20px; 
+    right: 25px; 
+    z-index: 1002; 
+    background: transparent; 
+    border: none; 
+    color: #fff; 
+    font-size: 2rem; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    text-shadow: 0 0 5px #000; 
+}
+
+#modal-close-btn:hover { 
+    color: #ff00ff; 
+    transform: rotate(90deg) scale(1.1); 
+}
+
+/* --- TECH STACK STYLES --- */
+.tech-stack-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* Efek fade di tepi kanan dan kiri */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.tech-stack-scroller {
+    display: flex;
+    width: max-content; /* Lebar otomatis berdasarkan konten */
+    animation: scroll 40s linear infinite;
+}
+
+.tech-logo {
+    height: 60px; /* Sesuaikan ukuran logo di sini */
+    margin: 0 40px; /* Jarak antar logo */
+    filter: grayscale(100%) opacity(0.7);
+    transition: all 0.3s ease;
+}
+
+.tech-logo:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.1);
+}
+
+/* Animasi untuk scrolling */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Geser sejauh 50% dari total lebar (panjang satu set logo) */
+        transform: translateX(-50%);
+    }
+}
+
+/* TAMBAHKAN CSS INI DI AKHIR FILE style.css */
+
+.cert-panel {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cert-panel.active {
+    display: grid;
+    opacity: 1;
+}

@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Zakiansyah</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/logo/z-icon-new.png">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyberblue: '#00eeff',
+                        cyberpink: '#ff00ff',
+                        cyberpurple: '#bd00ff',
+                        cyberdark: '#0f0f1b',
+                        cybergray: '#1a1a2e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="cyber-gradient">
+
+    <nav class="cyber-nav" id="cyberNav">
+        <div class="container mx-auto max-w-6xl px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#home" class="text-xl font-bold text-cyberblue neon-text-blue tracking-widest">ZAKIANSYAH
+                    PORTOFOLIO</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="cyber-nav-link text-gray-300">ABOUT</a>
+                    <a href="#projects" class="cyber-nav-link text-gray-300">PROJECTS</a>
+                    <a href="#certificates" class="cyber-nav-link text-gray-300">CERTIFICATES</a>
+                    <a href="#skills" class="cyber-nav-link text-gray-300">SKILLS</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl text-cyberblue"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-cybergray/90">
+            <a href="#about"
+                class="block py-3 px-4 text-center text-gray-300 hover:bg-cyberblue hover:text-cyberdark">ABOUT</a>
+            <a href="#projects"
+                class="block py-3 px-4 text-center text-gray-300 hover:bg-cyberblue hover:text-cyberdark">PROJECTS</a>
+            <a href="#certificates"
+                class="block py-3 px-4 text-center text-gray-300 hover:bg-cyberblue hover:text-cyberdark">CERTIFICATES</a>
+            <a href="#skills"
+                class="block py-3 px-4 text-center text-gray-300 hover:bg-cyberblue hover:text-cyberdark">SKILLS</a>
+        </div>
+    </nav>
+
+    <header id="home" class="relative overflow-hidden min-h-screen flex items-center justify-center text-center px-4">
+        <div class="relative z-2 container mx-auto max-w-6xl" data-aos="fade-in" data-aos-duration="1500">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 glow text-cyberblue">PORTOFOLIO</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-8 neon-text-blue">ZAKIANSYAH</h2>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">Passionate developer specializing in Mobile
+                Apps, UI/UX, and Frontend Development.</p>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 px-4 bg-cyberdark">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-1" data-aos="fade-right">
+                    <div class="relative aspect-square bg-cybergray/50 p-2 rounded-xl neon-border">
+                        <div class="absolute inset-0 bg-[url('assets/aboutme2.jpg')] bg-cover bg-center z-0 rounded-md">
+                        </div>
+                        <div class="absolute top-1 left-1 w-4 h-4 border-t-2 border-l-2 border-cyberpink z-10"></div>
+                        <div class="absolute top-1 right-1 w-4 h-4 border-t-2 border-r-2 border-cyberpink z-10"></div>
+                        <div class="absolute bottom-1 left-1 w-4 h-4 border-b-2 border-l-2 border-cyberpink z-10"></div>
+                        <div class="absolute bottom-1 right-1 w-4 h-4 border-b-2 border-r-2 border-cyberpink z-10">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-2" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="text-2xl md:text-3xl font-bold text-cyberblue mb-6 neon-text-blue">&gt; ABOUT_ME</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">An Informatics graduate from Universitas Ahmad Dahlan
+                        with a strong passion for mobile and web development, as well as UI/UX design. My expertise has
+                        been significantly shaped by participating in prestigious bootcamps, such as Bangkit Academy,
+                        where I specialized in the mobile development learning path, and SYNRGY Academy, where I focused
+                        on UI/UX design and product management.</p>
+                    <a href="path/to/your/cv.pdf" download
+                        class="inline-block cyber-button text-white font-bold py-3 px-6 rounded-lg text-lg"><i
+                            class="fas fa-download mr-2"></i>DOWNLOAD CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-4 bg-cybergray/30 grid-pattern">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h3 class="text-2xl md:text-3xl font-bold text-cyberblue mb-4 neon-text-blue">&gt; PROJECT ARCHIVE</h3>
+                <p class="max-w-2xl mx-auto text-gray-300">A selection of my creations across different domains.</p>
+            </div>
+            <div class="flex justify-center flex-wrap gap-4 mb-12" data-aos="fade-up" data-aos-delay="100">
+                <button class="cyber-tab active" data-target="#ui-ux-content">UI/UX Design</button>
+                <button class="cyber-tab" data-target="#mobile-content">Mobile Apps</button>
+                <button class="cyber-tab" data-target="#web-content">Website</button>
+            </div>
+            <div id="projects-content-container">
+                <div id="ui-ux-content" class="project-panel active grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/mockup_dana.png"
+                                alt="DANA App UI Recreate Preview"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">DANA App UI Recreate</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">A detailed recreation of the DANA digital
+                                wallet application's user interface.</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="DANA App UI Recreate"
+                                    data-image="assets/mockup_dana.png"
+                                    data-description="This project is a faithful recreation of the DANA application's UI, built using Figma. The goal was to practice component-based design, understand complex UI layouts, and maintain brand consistency."
+                                    data-link="https://www.figma.com/design/uPH7ZxUkcDyTzP4Y3YHeme/Dana-App-Recreate?node-id=0-1&t=HHphcUHEPBR21Zn4-1"
+                                    data-link-text="View on Figma"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="150">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/jangkau.png" alt="Jangkau By BCA"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Jangkau By BCA</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">A complete UI/UX overhaul for an inclusive
+                                mobile
+                                banking app</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Jangkau By BCA"
+                                    data-image="assets/jangkau.png"
+                                    data-description="A case study on redesigning a mobile banking application. The process involved user research, creating user personas, mapping user flows, and delivering a high-fidelity prototype."
+                                    data-link="https://www.dribbble.com" data-link-text="View Figma"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/scancare.png" alt="Scancare"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Scancare</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">Skin Care Ingredient Insight & BPOM Checker
+                                Application</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Scancare"
+                                    data-image="assets/scancare.png"
+                                    data-description="Application for skincare enthusiasts to learn about the ingredients in their skincare products and verify product legality through an image scanning feature."
+                                    data-link="#" data-link-text="View Figma"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/spotify.png" alt="Spotify"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Spotify</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">A pixel-perfect recreation of the iconic
+                                Spotify mobile app interface, crafted meticulously in Figma. </p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Spotify"
+                                    data-image="assets/spotify.png"
+                                    data-description="This project is a deep dive into deconstructing a world-class design system. The goal was to master component-based design, ensure layout consistency, and meticulously replicate the user experience that millions love. It showcases a keen eye for detail and a commitment to high-fidelity UI replication."
+                                    data-link="https://www.figma.com/design/Us0e9G7eJbh9d2PPLkUyvg/Spotify-Recreate?node-id=5-107&t=RryIaMBUbU67ZmgE-1"
+                                    data-link-text="View Figma"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/serenity.png" alt="Serenity"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Serenity</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">Serenity: A Safe Space for Your Soul. </p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Serenity"
+                                    data-image="assets/serenity.png"
+                                    data-description=" Pour your heart into a private journal and let calming music envelop you. Serenity, designed for your peace of mind."
+                                    data-link="https://www.figma.com/design/Co8pv4av6jCvvayWYQfpir/Serenity?node-id=39-67&t=t34NwSAl9L1cUi33-1"
+                                    data-link-text="View Figma"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/phoneshop.png" alt="Serenity"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Phone Shop</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">Your Dream Gadget, Just a Click Away.</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Phone Shop"
+                                    data-image="assets/phoneshop.png"
+                                    data-description="Finding new gadgets has never been this easy. Explore thousands of products, from the latest phones to high-performance laptops, all in one app. Discover the best deals, add them to your cart, and we'll deliver safely to your doorstep. With a fast and secure payment process, we are the answer to all your tech needs. One-stop shopping, redefined."
+                                    data-link="https://www.figma.com/design/Zzf0XtOLkJazzcMwmHt8WM/Laptop-Shop?node-id=2002-61&t=s9OlGKt6lhgrRRbs-1"
+                                    data-link-text="View Figma"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mobile-content" class="project-panel grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/mobile/scancare.png" alt="Scancare"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Scancare</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">Skin Care Ingredient Insight & BPOM Checker
+                                Application</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Scancare"
+                                    data-image="assets/mobile/scancare.png"
+                                    data-description="Application for skincare enthusiasts to learn about the ingredients in their skincare products and verify product legality through an image scanning feature."
+                                    data-link="https://github.com/ScanCareApp/ScanCare"
+                                    data-link-text="View in Github"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/mobile/github.png" alt="Github App"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Github App</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">A native Android application built with
+                                Kotlin, designed to search and display user profiles from the GitHub API. It features
+                                the ability to save your favorite users to a local database for persistent and easy
+                                access.</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Github App"
+                                    data-image="assets/mobile/github.png"
+                                    data-description="This project is a native Android app developed in Kotlin that demonstrates how to interact with a web API (the official GitHub API) to fetch and display user data. The main features include real-time user search and local database integration to store and manage a list of favorite users."
+                                    data-link="https://github.com/zakiansyah/AplikasiGithub"
+                                    data-link-text="View in Github"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/mobile/storyapp.png" alt="Story app"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Story app</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">Geo-Tagged Story Feed</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Story app"
+                                    data-image="assets/mobile/storyapp.png"
+                                    data-description="This project is a native Android app developed in Kotlin that demonstrates advanced features like image sharing, data pagination, and map integration. Its core functionalities include allowing users to upload stories and viewing them in a dynamic feed powered by the Paging 3 library for smooth, infinite scrolling. A key feature is the use of the Google Maps API to visually represent the geographical location of each story."
+                                    data-link="https://github.com/zakiansyah/Story_App"
+                                    data-link-text="View in Github"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/mobile/compose.png"
+                                alt="Electronic Store App"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Electronic Store App</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">ComposeCart: A Jetpack Compose E-commerce
+                                Demo</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Electronic Store App"
+                                    data-image="assets/mobile/compose.png"
+                                    data-description="A modern e-commerce application for an electronics store, built entirely with Jetpack Compose. This app provides a seamless shopping experience for purchasing smartphones, featuring core functionalities such as adding items to a persistent shopping cart, viewing a running total of the cart's value, and proceeding to a secure payment process."
+                                    data-link="https://github.com/zakiansyah/SubmissionJetElectronics"
+                                    data-link-text="View in Github"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/mobile/movie21.png"
+                                alt="Movie 21 App"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Movie 21 App</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">Advanced Android Movie App (Movie 21)</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Movie 21 App"
+                                    data-image="assets/mobile/movie21.png"
+                                    data-description="This project is a native Android application that showcases an advanced, secure, and maintainable architecture. It implements reactive data streams using Coroutine Flow to fetch and display film data, while leveraging Koin for clean and scalable dependency injection. The development process is streamlined with a full continuous integration (CI) pipeline, and the application incorporates essential security measures to protect data. Core user features include browsing popular movies and managing a personal favorites list."
+                                    data-link="https://github.com/zakiansyah/Movie21" data-link-text="View in Github"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="web-content" class="project-panel grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/web/manajemen_perpustakaan.png"
+                                alt="Manajemen Perpustakaan"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Manajemen Perpustakaan</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">Library Management System</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Manajemen Perpustakaan"
+                                    data-image="assets/web/manajemen_perpustakaan.png"
+                                    data-description="Manajemen perpustakaan is a web-based management information system designed to record members, books, and transactions in the library. This system enables more efficient and accurate data management, making it easier for library staff to track book loans and returns, as well as monitor memberships. The website interface is created using Bootstrap 5, while the backend uses native PHP and MySQL as the database, ensuring structured data storage that is easily accessible."
+                                    data-link="https://github.com/zakiansyah/manajemen-perpustakaan"
+                                    data-link-text="View in Github"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/web/sistem-rekomendasi.png"
+                                alt="Sistem Rekomendasi Mahasiswa Berpotensi Lulus Tepat Waktu"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Sistem Rekomendasi Mahasiswa Berpotensi
+                                Lulus Tepat Waktu</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">Predictive Analytics to Support Student
+                                Academic Success and Timely Graduation</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full"
+                                    data-title="Sistem Rekomendasi Mahasiswa Berpotensi Lulus Tepat Waktu"
+                                    data-image="assets/web/sistem-rekomendasi.png"
+                                    data-description="This application is a recommendation system designed to identify students who have a high potential to graduate on time. The main goal is to allow academic advisors to proactively support students who might be at risk of delay. The system makes its final decision based on a 0.5 score threshold. Students scoring above it are recommended as likely to graduate on time, while a score of 0.5 or lower indicates a need for academic attention or support."
+                                    data-link="https://github.com/zakiansyah/SR-MHS-FIX"
+                                    data-link-text="View in Github"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/web/ciomas.png"
+                                alt="SIM Karyawan Ciomas Jogja"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">SIM Karyawan Ciomas Jogja</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">One Access for Productivity: PT Ciomas
+                                Yogyakarta Employee MIS</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="SIM Karyawan Ciomas Jogja"
+                                    data-image="assets/web/ciomas.png"
+                                    data-description="The Ciomas Employee Management System (SIM Karyawan Ciomas) is a digital platform designed to manage and streamline the entire employee registration process online. This system facilitates seamless interaction between applicants, the HRD team, and administrators by defining specific user roles. In essence, the workflow is as follows: the HRD team posts job openings, applicants submit their registrations, and HRD then screens the candidates. Throughout this process, the Administrator ensures all user accounts are properly managed and that the system functions correctly."
+                                    data-link="https://github.com/zakiansyah/SIM-Karyawan-Ciomas-Jogja"
+                                    data-link-text="View in Github"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card group rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="300">
+                        <div class="h-48 relative overflow-hidden"><img src="assets/web/bookshelf.png"
+                                alt="Bookshelf App"
+                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Bookshelf App</h4>
+                            <p class="text-gray-300 mb-4 text-sm flex-grow">Track Your Reading, Organize Your Library
+                            </p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Bookshelf App"
+                                    data-image="assets/web/bookshelf.png"
+                                    data-description="The Bookshelf App is a web application designed to help users catalog and manage their personal book collection. Its core feature allows you to organize books into two main shelves: &quot;Finished Reading&quot; and &quot;Unread.&quot; Additionally, the application includes a search function to quickly find any specific book within your collection."
+                                    data-link="https://github.com/zakiansyah/Bookshelf-App"
+                                    data-link-text="View in Github"><i class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h3 class="text-2xl md:text-3xl font-bold text-cyberpink mb-4 neon-text-pink">&gt; CERTIFICATE DATABASE
+                </h3>
+                <p class="max-w-2xl mx-auto text-gray-300">VALIDATION OF TECHNICAL EXPERTISE</p>
+            </div>
+
+            <div class="flex justify-center flex-wrap gap-2 sm:gap-4 mb-12" data-aos="fade-up" data-aos-delay="100">
+                <button class="cyber-tab cert-tab active" data-target="#cert-mobile">Mobile Dev</button>
+                <button class="cyber-tab cert-tab" data-target="#cert-uiux">UI/UX</button>
+                <button class="cyber-tab cert-tab" data-target="#cert-web">Web Dev</button>
+                <button class="cyber-tab cert-tab" data-target="#cert-other">Others</button>
+            </div>
+
+            <div id="certificate-content-container">
+                <div id="cert-mobile" class="cert-panel active grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/andro_bangkit.png"
+                                alt="Bangkit Academy 2023 Batch 2 (Mobie Development Learning Path)"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-android"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Bangkit Academy 2023 Batch 2 (Mobile Development Learning Path)</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Bangkit Academy</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Bangkit Academy 2023 Batch 2 (Mobile
+                                Development Learning Path)</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Bangkit Academy is an independent study
+                                program organized by the government through the MSIB program.</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full"
+                                    data-title="Bangkit Academy 2023 Batch 2 (Mobile Development Learning Path)"
+                                    data-image="assets/certficates/andro_bangkit.png"
+                                    data-description="Achieve graduate top 10% Bangkit Academy (graduate with dictinction) and complete all modules at Bangkit Academy"
+                                    data-link="https://drive.google.com/file/d/1O-FGaN-cxcF5L_xn8GFyHgm-j6rAnilb/view?usp=sharing"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/andro_expert_page-0001.jpg"
+                                alt="Menjadi Android Developer Expert" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-android"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Menjadi Android Developer Expert</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Android Developer Expert</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Mastering Design Pattern & Clean
+                                Architecture, Reactive Programming, Dependency Injection, and Modularization </p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Android Developer Expert"
+                                    data-image="assets/certficates/andro_expert_page-0001.jpg"
+                                    data-description="Certification from Dicoding Indonesia, recognizing expertise in building robust and feature-rich native Android applications using Kotlin."
+                                    data-link="https://www.dicoding.com/certificates/1OP8N7LMLXQK"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/andro_compose_page-0001.jpg" alt="Jetpack Compose For Android"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-android"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Jetpack Compose For Android</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Jetpack Compose For Android</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Learn about Jetpack Compose framework for
+                                android </p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Jetpack Compose For Android"
+                                    data-image="assets/certficates/andro_compose_page-0001.jpg"
+                                    data-description="Certification from Dicoding Indonesia, recognizing expertise using Kotlin and Jetpack Compose."
+                                    data-link="https://www.dicoding.com/certificates/KEXLLR8N0XG2"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/andro_intermediate_page-0001.jpg"
+                                alt="Android For Intermediate" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-android"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Android For Intermediate</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Android For Intermediate</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Android module for intermediate</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Jetpack Compose For Android"
+                                    data-image="assets/certficates/andro_intermediate_page-0001.jpg"
+                                    data-description="Learn Custom View, Animation, Localization, Media, Location, Testing, dan Advanced Database."
+                                    data-link="https://www.dicoding.com/certificates/6RPN4NYWRX2M"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/andro_fundamental_page-0001.jpg" alt="Android Fundamental"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-android"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Android Fundamental</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Android Fundamental</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Fundamental principal to build android
+                                application</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Android Fundamental"
+                                    data-image="assets/certficates/andro_fundamental_page-0001.jpg"
+                                    data-description="Learn Android skills with the comprehensive curriculum that companies need. Starting from UI/UX, background process, API to database."
+                                    data-link="https://www.dicoding.com/certificates/N9ZO5YRRDPG5"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/andro_pemula_page-0001.jpg" alt="Android For Beginner"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-android"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Android For Beginner</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Android For Beginner</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">This class is intended for beginners who
+                                want to start their career in the Android Developer field by referring to Google's
+                                international competency standards.</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Android For Beginner"
+                                    data-image="assets/certficates/andro_pemula_page-0001.jpg"
+                                    data-description="Create applications on Android Studio by learning the basics of Activity, Intent, View & ViewGroup, Style & Theme to RecyclerView."
+                                    data-link="https://www.dicoding.com/certificates/6RPN43MV4X2M"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/andro_kotlin_page-0001.jpg" alt="Start Programming With Kotlin"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-android"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Start Programming With Kotlin</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Start Programming With Kotlin</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">This certificate is intended for those who
+                                want to learn the basics of the Kotlin programming language by referring to the
+                                international competency standards of Google Developers Authorized Training Partners.
+                            </p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Start Programming With Kotlin"
+                                    data-image="assets/certficates/andro_kotlin_page-0001.jpg"
+                                    data-description="Learn the basics of programming languages, functional programming, object-oriented programming (OOP), and concurrency using Kotlin."
+                                    data-link="https://www.dicoding.com/certificates/4EXGNMDM1ZRL"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/bnsp_jmp.jpg" alt="Junior Mobile Programmer"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-android"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Junior Mobile Programmer</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Junior Mobile Programmer</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">This certification is a nationally
+                                recognized standard in Indonesia that validates the core competencies of an entry-level
+                                mobile application developer.</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Junior Mobile Programmer"
+                                    data-image="assets/certficates/bnsp_jmp.jpg"
+                                    data-description="Issued by the National Professional Certification Body (BNSP), this credential formally proves that the holder has mastered the fundamental skills required to design, build, and debug mobile applications according to the Indonesian National Work Competency Standards (SKKNI)."
+                                    data-link="https://drive.google.com/file/d/17NGCPrqp_u0jhDhAgb5VS5KPm1_dANts/view?usp=drive_link"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cert-uiux" class="cert-panel grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/ui_synrgy.jpg" alt="Start Programming With Kotlin"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fas fa-drafting-compass"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    PM & UI/UX Bootcamp</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    SYNRGY Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">PM & UI/UX Bootcamp BY SYNRGY Academy</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">This certificate is intended for
+                                participants who have completed the 6-month Product Management and UI/UX bootcamp.</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="PM & UI/UX Bootcamp BY SYNRGY Academy"
+                                    data-image="assets/certficates/ui_synrgy.jpg"
+                                    data-description="The Product Management and UI/UX Bootcamp teaches how to design and manage digital products, from user research, design thinking, and prototyping in Figma, to team collaboration using the Scrum method. Participants also learn to create product documents and launch strategies to ensure the solution is accurate and ready for use."
+                                    data-link="https://drive.google.com/file/d/1Fu1Ntt4VOPoSulezEPDlHDdzfF6ZWf6B/view?usp=drive_link"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/ux_dicoding.jpg" alt="Start Programming With Kotlin"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fas fa-drafting-compass"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Basix of UX Design</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Basix of UX Design</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow"> This certificate serves as proof of
+                                completion for the Fundamental UX Design module from Dicoding Indonesia.</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Basix of UX Design"
+                                    data-image="assets/certficates/ux_dicoding.jpg"
+                                    data-description="This certificate serves as proof of completion for the Fundamental UX Design module from Dicoding Indonesia. Through this program, I gained a comprehensive understanding of the end-to-end design thinking process, from conducting user research and creating personas to developing wireframes and interactive prototypes. I learned to identify user pain points and translate them into intuitive, user-centered design solutions."
+                                    data-link="https://www.dicoding.com/certificates/L4PQQE214PO1"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cert-web" class="cert-panel grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/frontend.jpg" alt="Beginner Web Frontend"
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-react"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Beginner Web Frontend</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Beginner Web Frontend</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Building Interactive Front-End Web
+                                Applications</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Beginner Web Frontend"
+                                    data-image="assets/certficates/frontend.jpg"
+                                    data-description="This class is designed for Front-End Web Developers who want to build websites with functionality beyond just displaying information, in line with industry standards. By the end of the class, students will be able to create interactive front-end web applications that feature data persistence using web storage."
+                                    data-link="https://www.dicoding.com/certificates/GRX5OWJJRP0M"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/pweb.jpg" alt="Web Programming Basics"
+                                class="w-full h-full object-cover"> Web Programming Basics
+
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-react"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Web Programming Basics</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Web Programming Basics</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Web Development Fundamentals: Mastering HTML
+                                and CSS</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Web Programming Basics"
+                                    data-image="assets/certficates/pweb.jpg"
+                                    data-description="This class provides a complete guide to the fundamentals of HTML and CSS, the three core foundations for building any website. This foundational knowledge is essential for anyone looking to advance their web development skills. Curated and verified by the Dicoding expert team, the material is presented in a structured and comprehensive manner."
+                                    data-link="https://www.dicoding.com/certificates/1OP8JYJ6VPQK"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/bnsp_jwd.jpg" alt="Web Programming Basics"
+                                class="w-full h-full object-cover">Junior Web Developer
+
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-react"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Junior Web Developer</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Badan Nasional Sertifikasi Profesi (BNSP)</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Junior Web Developer</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">This certification is a nationally
+                                recognized standard in Indonesia for validating the competency of an entry-level web
+                                developer. Issued by the Badan Nasional Sertifikasi Profesi (BNSP)</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Junior Web Developer"
+                                    data-image="assets/certficates/bnsp_jwd.jpg"
+                                    data-description="This certification is aimed at students, recent graduates, and professionals who wish to have their web development skills formally acknowledged by the state, enhancing their credibility and competitiveness in the job market."
+                                    data-link="https://drive.google.com/file/d/1FZ5mVamg2rXPBc_FkxdlTetNK6wUpYEg/view?usp=drive_link"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/javascript.jpg" alt="Web Programming Basics"
+                                class="w-full h-full object-cover">JavaScript Programming Basics
+
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fab fa-react"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    JavaScript Programming Basics</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">JavaScript Programming Basics</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">JavaScript Mastery: From Core Concepts to
+                                Application</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="JavaScript Programming Basics"
+                                    data-image="assets/certficates/javascript.jpg"
+                                    data-description="This comprehensive certification builds JavaScript expertise from the ground up. The curriculum begins with the fundamentals of programming logic, syntax, and essential data structures. It then progresses to advanced paradigms like Object-Oriented Programming (OOP) and Functional Programming, teaching the methods for writing clean, efficient, and reusable code."
+                                    data-link="https://www.dicoding.com/certificates/2VX3R001JZYQ"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="cert-other" class="cert-panel grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/machine_learning.jpg" alt="Machine Learning for Beginners"
+                                class="w-full h-full object-cover">Machine Learning for Beginners
+
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fas fa-brain"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Machine Learning for Beginners</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Machine Learning for Beginners</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Machine Learning Foundations: From
+                                Algorithms to Implementation</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Machine Learning for Beginners"
+                                    data-image="assets/certficates/machine_learning.jpg"
+                                    data-description="The curriculum explains the standard workflow of a machine learning project, including how to address common issues like overfitting, underfitting, and model selection. It also provides a basic introduction to Neural Networks, covering Multi-Layer Perceptrons (MLP) and Convolutional Neural Networks (CNN). The course concludes with a hands-on introduction to TensorFlow, a powerful library for developing ML projects."
+                                    data-link="https://www.dicoding.com/certificates/1RXY1NQGQPVM"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/visdat.jpg" alt="Data Visualization Basics"
+                                class="w-full h-full object-cover">Data Visualization Basics
+
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fas fa-brain"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Data Visualization Basics</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Data Visualization Basics</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Data Visualization Fundamentals with Google
+                                Sheets</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Data Visualization Basics"
+                                    data-image="assets/certficates/visdat.jpg"
+                                    data-description="The main section focuses on transforming data into compelling visuals, teaching how to choose the right charts, avoid common mistakes, and tell a story with data. This includes applying design theories like the Gestalt Principles and Preattentive Attributes for maximum impact."
+                                    data-link="https://www.dicoding.com/certificates/1RXY0GYK9ZVM"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/python.jpg" alt="Getting Started with Python Programming"
+                                class="w-full h-full object-cover">Getting Started with Python Programming
+
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fas fa-brain"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Getting Started with Python Programming</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Getting Started with Python Programming
+                            </h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Python Programming: From Fundamentals to
+                                Practical Applications</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full"
+                                    data-title="Getting Started with Python Programming"
+                                    data-image="assets/certficates/python.jpg"
+                                    data-description="This certification course is designed for beginners, providing a thorough introduction to the Python programming language according to industry standards. The curriculum covers core programming fundamentals, including data interaction, expressions, control flow (loops, branching, and error handling), and working with data structures like arrays and matrices. Participants also learn to build well-structured programs by utilizing functions and procedures."
+                                    data-link="https://www.dicoding.com/certificates/JMZV1KE5RXN9"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/java.jpg" alt="Java Programming Basics"
+                                class="w-full h-full object-cover">Java Programming Basics
+
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fas fa-brain"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Java Programming Basics</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">Java Programming Basics</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Java Programming: From Fundamentals to
+                                Object-Oriented Concepts</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="Java Programming Basics"
+                                    data-image="assets/certficates/java.jpg"
+                                    data-description="This certification course provides a comprehensive introduction to the Java programming language for beginners, adhering to industry standards. The curriculum begins with the fundamentals, covering Java's basic structure, data types, operators, and control flow. It then introduces methods for managing data collections using List, Set, and Map."
+                                    data-link="https://www.dicoding.com/certificates/MRZMQ0943PYQ"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/solid.jpg" alt="SOLID Programming Principles"
+                                class="w-full h-full object-cover">SOLID Programming Principles
+
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fas fa-brain"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    SOLID Programming Principles</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">SOLID Programming Principles</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">Foundations of SOLID Design in
+                                Object-Oriented Programming</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="SOLID Programming Principles"
+                                    data-image="assets/certficates/solid.jpg"
+                                    data-description="Learn the importance of software design principles and how to recognize and avoid the three key characteristics of poor design: rigidity, fragility, and immobility. The core of the program is a detailed breakdown of each of the five S.O.L.I.D. principles: Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion."
+                                    data-link=" https://www.dicoding.com/certificates/2VX365274XYQ"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cyber-card rounded-xl overflow-hidden flex flex-col" data-aos="zoom-in-up"
+                        data-aos-delay="0">
+                        <div class="h-48 relative overflow-hidden">
+                            <img src="assets/certficates/aca_bigdata.jpg" alt="ACA Big Data"
+                                class="w-full h-full object-cover">ACA Big Data
+
+                            <div
+                                class="absolute inset-0 bg-black/0 hover:bg-black/60 transition-colors duration-300 flex flex-col items-center justify-center text-center">
+                                <span
+                                    class="text-4xl text-white mb-2 opacity-0 hover:opacity-100 transition-opacity duration-300"><i
+                                        class="fas fa-brain"></i></span>
+                                <h4
+                                    class="font-bold text-xl text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    ACA Big Data</h4>
+                                <p
+                                    class="text-gray-300 text-sm opacity-0 hover:opacity-100 transition-opacity duration-300">
+                                    Alibaba Cloud</p>
+                            </div>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h4 class="font-bold text-xl text-cyberpink mb-2">ACA Big Data</h4>
+                            <p class="text-gray-300 text-sm mb-4 flex-grow">The ACA Big Data certification demonstrates
+                                an individual's proficiency in core concepts of distributed systems and their practical
+                                application using key Alibaba Cloud services.</p>
+                            <div class="mt-auto">
+                                <button class="preview-button w-full" data-title="ACA Big Data"
+                                    data-image="assets/certficates/aca_bigdata.jpg"
+                                    data-description="This certification validates the foundational knowledge and skills required to use Alibaba Cloud's suite of big data products. It is designed for engineers, developers, and technical personnel who work with and deploy big data solutions on the Alibaba Cloud platform"
+                                    data-link="https://www.dicoding.com/certificates/2VX3R001JZYQ"
+                                    data-link-text="Validate Certificate"><i
+                                        class="fas fa-eye mr-2"></i>Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-4 bg-cybergray/30">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h3 class="text-2xl md:text-3xl font-bold text-cyberblue mb-4 neon-text-blue">&gt; TECH STACK</h3>
+                <p class="max-w-2xl mx-auto text-gray-300">SYSTEMS & FRAMEWORKS I OPERATE</p>
+            </div>
+
+            <div class="tech-stack-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <div class="tech-stack-scroller">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                        class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                        class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        alt="Bootstrap" class="tech-logo">
+                    <img src="assets/tech stack/tailwind.png" alt="Tailwind CSS" class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                        class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+                        alt="Kotlin" class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
+                        class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js" class="tech-logo">
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                        class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                        class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        alt="Bootstrap" class="tech-logo">
+                    <img src="assets/tech stack/tailwind.png" alt="Tailwind CSS" class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                        class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+                        alt="Kotlin" class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
+                        class="tech-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js" class="tech-logo">
+                </div>
+            </div>
+        </div>
+        <!-- <div id="contact" class="container mx-auto max-w-4xl mt-24" data-aos="fade-up">
+            <div class="text-center lg:text-left mb-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-cyberpink mb-4 neon-text-pink">&gt; CONNECT PROTOCOL</h3>
+                <p class="text-gray-300">INITIATE COMMUNICATION SEQUENCE</p>
+            </div>
+            <div class="cyber-card rounded-xl p-8">
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-cyberblue mb-2" for="name">IDENTITY</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 cyber-input rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-cyberblue mb-2" for="email">CONTACT FREQUENCY</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 cyber-input rounded-lg">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-cyberblue mb-2" for="message">MESSAGE CONTENT</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 cyber-input rounded-lg"></textarea>
+                    </div>
+                    <button type="submit" class="w-full cyber-button text-white font-bold py-3 px-4 rounded-lg">INITIATE
+                        TRANSMISSION</button>
+                </form>
+            </div>
+        </div> -->
+    </section>
+
+    <footer class="py-12 px-4 bg-cybergray" data-aos="fade-up">
+        <div class="container mx-auto max-w-6xl text-center">
+            <!-- <h3 class="text-2xl font-bold mb-4 text-cyberblue">ZAKIANSYAH</h3>
+            <p class="max-w-2xl mx-auto mb-8 text-gray-300">BUILDING THE DIGITAL FUTURE ONE LINE OF CODE AT A TIME</p> -->
+            <div class="flex justify-center items-center space-x-8 mb-8">
+                <a href="#"
+                    class="flex items-center space-x-2 text-cyberblue hover:text-cyberpink transition duration-300 group">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                    <span class="font-semibold">LinkedIn</span>
+                </a>
+                <a href="#"
+                    class="flex items-center space-x-2 text-cyberblue hover:text-cyberpink transition duration-300 group">
+                    <i class="fab fa-github text-2xl"></i>
+                    <span class="font-semibold">GitHub</span>
+                </a>
+                <a href="#"
+                    class="flex items-center space-x-2 text-cyberblue hover:text-cyberpink transition duration-300 group">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span class="font-semibold">Instagram</span>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">Crafted with ❤️ and code by Zakiansyah. &copy; 2025</p>
+        </div>
+    </footer>
+
+    <div id="preview-modal">
+        <div id="modal-overlay"></div>
+        <button id="modal-close-btn">&times;</button>
+        <div id="modal-content-wrapper">
+            <img id="modal-image" src="" alt="Project Preview">
+            <div id="modal-details-box">
+                <h3 id="modal-title" class="text-2xl font-bold text-cyberblue neon-text-blue mb-3"></h3>
+                <p id="modal-description" class="text-gray-300 mb-6 text-sm leading-relaxed"></p>
+                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer"
+                    class="inline-block cyber-button text-white font-bold py-3 px-6 rounded-lg">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
